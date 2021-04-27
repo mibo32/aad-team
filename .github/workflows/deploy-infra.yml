@@ -33,5 +33,5 @@ jobs:
     - name: build and push    
       run: |
         ls -a
-        chmod +x ./teraform/deploy-team.sh
-        sh ./teraform/deploy-team.sh mibo westeurope 5d9a229f-3bb4-46fb-9995-4d0625c98a34
+        chmod +x ./terraform/deploy-team.sh
+        sh ./terraform/deploy-team.sh mibo westeurope 5d9a229f-3bb4-46fb-9995-4d0625c98a34
