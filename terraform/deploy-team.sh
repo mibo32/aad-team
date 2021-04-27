@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -o pipefail
+# set -o pipefail
 
 # ./deploy-team.sh team1 northeurope 7d5e75b2-356e-4bf6-b12f-24e2e79a8269
 
