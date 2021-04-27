@@ -12,9 +12,9 @@ on:
     #  - GameBot/**
     #  - .github/workflows/build-push-gamebot.yml
    
-defaults:
-  run:
-    working-directory: GameBot
+#defaults:
+#  run:
+#    working-directory: GameBot
 jobs:
   build:
     runs-on: ubuntu-latest
