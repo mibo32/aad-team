@@ -12,9 +12,9 @@ on:
     #  - GameBot/**
     #  - .github/workflows/build-push-gamebot.yml
    
-#defaults:
-#  run:
-#    working-directory: GameBot
+defaults:
+  run:
+    working-directory: terraform
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -33,5 +33,5 @@ jobs:
     - name: build and push    
       run: |
         ls -a
-        chmod +x ./terraform/deploy-team.sh
-        bash  ./terraform/deploy-team.sh mibo westeurope 5d9a229f-3bb4-46fb-9995-4d0625c98a34
+        chmod +x ./deploy-team.sh
+        bash  ./deploy-team.sh mibo westeurope 5d9a229f-3bb4-46fb-9995-4d0625c98a34
