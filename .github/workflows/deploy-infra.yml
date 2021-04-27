@@ -7,8 +7,8 @@ on:
     branches-ignore:
       - '**'
     
-    #branches: [ master ]
-    #paths:
+     #paths: #branches: [ master ]
+  
     #  - GameBot/**
     #  - .github/workflows/build-push-gamebot.yml
    
@@ -32,4 +32,4 @@ jobs:
     # build the docker image
     - name: build and push    
       run: |
-         /teraform/deploy-team.sh mibo westeurope 5d9a229f-3bb4-46fb-9995-4d0625c98a34
+         sh ./teraform/deploy-team.sh mibo westeurope 5d9a229f-3bb4-46fb-9995-4d0625c98a34
