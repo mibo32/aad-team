@@ -8,6 +8,8 @@ export team_name="${1,,}"
 export location="${2,,}"
 export subscriptionid="$3"
 
+az account show --query tenantId -o tsv
+
 if [ "$team_name" == "" ]; then
 echo "No team_name provided - aborting"
 exit 0;
