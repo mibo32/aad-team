@@ -1,6 +1,7 @@
 name: deploy mibo
 
 on:
+  workflow_dispatch:
   push:    
     # deactivated for now - has to be enabled by team
     branches-ignore:
